@@ -1,0 +1,111 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #161616;
+    margin: 0px;
+}
+
+hr {
+    width: all;
+}
+
+#title{
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+#board {
+    width: 350px;
+    height: 420px;
+    margin: 0 auto;
+    margin-top: 15px;
+    display: flex; /* kutular ortada */
+    flex-wrap: wrap;
+}
+
+
+.tile {
+    /* Box */
+    border: 2px solid lightgray;
+    width: 60px;
+    height: 60px;
+    margin: 2.5px;
+
+    /* Text */
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center; /* harfler kutunun ortasında */
+    align-items: center;
+}
+
+.correct /*doğru*/ {
+    background-color: green;
+    color: white;
+    border-color: white;
+}
+
+.present /*mevcut*/ {
+    background-color: #C9B458;
+    color: white;
+    border-color: white;
+
+}
+
+.absent /*mevcut olmayan*/ {
+    background-color: #787C7E;
+    color: white;
+    border-color: white;
+
+}
+
+#answer {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+
+.keyboard-row {
+    width: 420px;
+    margin: 0 auto;
+    display: flex;
+    background-color: rgb(58, 58, 58);
+}
+
+.key-tile {
+    width: 50px;
+    height: 55px;
+    margin: 1px;
+    border: 1px solid lightgray;
+
+    /* Text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.enter-key-tile {
+    width: 76px;
+    height: 55px;
+    margin: 1px;
+    border: 1px solid lightgray;
+
+    /* Text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+
